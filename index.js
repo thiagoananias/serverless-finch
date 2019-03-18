@@ -122,6 +122,8 @@ class Client {
       routingRules,
       manageResources;
 
+	  this.options = this.serverless.service.custom.client;
+
     return this._validateConfig()
       .then(() => {
         // region is set based on the following order of precedence:
